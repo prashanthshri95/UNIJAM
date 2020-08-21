@@ -1,9 +1,9 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class weapon : MonoBehaviour
+public class letterchuck : MonoBehaviour
 {
 
   //public float fireRate=0;
@@ -29,7 +29,7 @@ public class weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space")) {
+        if (Input.GetKeyDown(KeyCode.LeftAlt)) {
           Shoot();
         }
     }
