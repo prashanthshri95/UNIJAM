@@ -1,9 +1,9 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class weapon : MonoBehaviour
+public class teddychuck : MonoBehaviour
 {
 
   //public float fireRate=0;
@@ -29,7 +29,7 @@ public class weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space")) {
+        if (Input.GetKeyDown(KeyCode.LeftControl)) {
           Shoot();
         }
     }
@@ -47,8 +47,8 @@ public class weapon : MonoBehaviour
       int aniH = (int)Math.Round(animator.GetFloat("Horizontal"));
       int aniV = (int)Math.Round(animator.GetFloat("Vertical"));
 
-      Debug.Log(aniH);
-      Debug.Log(aniV);
+      //Debug.Log(aniH);
+      //Debug.Log(aniV);
 
       Vector3 newvec;
 
@@ -56,7 +56,7 @@ public class weapon : MonoBehaviour
       if (aniH == 1 && aniV == 0){
         shotRotDeg = 225;
         newvec  = new Vector3(1,(float)0.5,0);
-        Debug.Log("upright");
+        //Debug.Log("upright");
 
       }
 
@@ -65,7 +65,7 @@ public class weapon : MonoBehaviour
       {
         shotRotDeg = 315;
         newvec  = new Vector3(-1,(float)(-0.5),0);
-        Debug.Log("downleft");
+        //Debug.Log("downleft");
       }
 
       // UpLeft        -1, 1
@@ -73,7 +73,7 @@ public class weapon : MonoBehaviour
       {
         shotRotDeg = 45;
         newvec  = new Vector3(-1,(float)0.5,0);
-        Debug.Log("upleft");
+        //Debug.Log("upleft");
       }
 
       // Downright    -1, -1
@@ -81,14 +81,14 @@ public class weapon : MonoBehaviour
       {
         shotRotDeg = 135;
         newvec  = new Vector3(1,(float)(-0.5),0);
-        Debug.Log("downright");
+        //Debug.Log("downright");
 
       }
       //newvec  = new Vector3(1,(float)0.5,0);
       GameObject pancake = Instantiate(pancakePrefab,firePoint.position+1*(newvec.normalized),player.transform.rotation);
       Rigidbody2D rb = pancake.GetComponent<Rigidbody2D>();
       Rigidbody2D plrb = player.GetComponent<Rigidbody2D>();
-      Debug.Log(newvec*bulletForce);
+      //Debug.Log(newvec*bulletForce);
       pancake.transform.Rotate(0, 0, shotRotDeg);
       rb.AddForce(newvec*bulletForce,ForceMode2D.Impulse);
 
