@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class letterchuck : MonoBehaviour
+public class teddychuck : MonoBehaviour
 {
 
   //public float fireRate=0;
@@ -29,7 +29,7 @@ public class letterchuck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftAlt)) {
+        if (Input.GetKeyDown(KeyCode.LeftControl)) {
           Shoot();
         }
     }
