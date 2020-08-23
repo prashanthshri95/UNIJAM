@@ -20,7 +20,7 @@ public class KeepScore : MonoBehaviour
     }
     void OnGUI()
     {
-        GUI.Box(new Rect(100, 100, 100, 100), PlayerPrefs.GetInt("Score").ToString());
+        GUI.Box(new Rect(0, 0, 80, 30), "Score: " + PlayerPrefs.GetInt("Score").ToString());
 
     }
 
