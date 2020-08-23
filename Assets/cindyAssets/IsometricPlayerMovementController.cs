@@ -60,7 +60,7 @@ public class IsometricPlayerMovementController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col) {
               Debug.Log("OnCollisionEnter2D");
-              if(col.gameObject.name == "NPC (1)" || col.gameObject.name == "NPC (2)" ||col.gameObject.name == "Bear" ||col.gameObject.name == "NPC"){
+              if(col.gameObject.name == "NPC" ){
                     Destroy(this.gameObject);
                     SceneManager.LoadScene (sceneName:"GameOver");
               }
