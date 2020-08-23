@@ -24,7 +24,8 @@ public class wanderer : MonoBehaviour
       rb = GetComponent<Rigidbody2D>();
       //anim = GetComponentInChildren<Animator>();
       //anim.SetFloat("Speed",1);
-      ChangeDirection();
+      //ChangeDirection();
+      Physics2D.IgnoreLayerCollision(8, 9);
 
 
     }
@@ -36,6 +37,7 @@ public class wanderer : MonoBehaviour
         nextActionTime = Time.time + period;
         ChangeDirection();
         Debug.Log("the same");
+        Physics2D.IgnoreLayerCollision(8, 9);
 
       }
       Move();
@@ -74,7 +76,12 @@ public class wanderer : MonoBehaviour
       temp.position = transform.position;
     }
 
-    void OnCollisionEnter2D() {
+    void OnCollisionEnter2D(Collision2D col) {
+     Debug.Log("OnCollisionEnter2D");
+          if(col.gameObject.name == "pancake(Clone)"){
+                Debug.Log("success");
+                this.gameObject.SetActive(false);
+          }
       Vector3 temp = directionVector;
       ChangeDirection();
       int i = 0;

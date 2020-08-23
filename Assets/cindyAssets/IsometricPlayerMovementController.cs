@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class IsometricPlayerMovementController : MonoBehaviour
 {
@@ -56,4 +57,12 @@ public class IsometricPlayerMovementController : MonoBehaviour
 
             animator.SetFloat("Speed", movement.sqrMagnitude);
     }
+
+    void OnCollisionEnter2D(Collision2D col) {
+              Debug.Log("OnCollisionEnter2D");
+              if(col.gameObject.name == "NPC (1)" || col.gameObject.name == "NPC (2)" ||col.gameObject.name == "Bear" ||col.gameObject.name == "NPC"){
+                    Destroy(this.gameObject);
+                    SceneManager.LoadScene (sceneName:"GameOver");
+              }
+        }
 }

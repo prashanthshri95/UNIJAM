@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6556509814736573849}
   - component: {fileID: -2763767875453465023}
   - component: {fileID: 5047010021059146156}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,6 +118,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac411f6b0281e71439d84493785d54b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  new_house: {fileID: 1062308348466654489, guid: 5aec1de79f58d594cb95c50bc38d478b, type: 3}
+  currentHouse: {fileID: 2093853021510605516}
+  targetUD: {fileID: 6332957288220594993, guid: 85054e6b500c6ed4e8df7122654abf47, type: 3}
+  targetLR: {fileID: 7950860898148369832, guid: ed3a4b6fa684fd54ba3c1acac86aead1, type: 3}
 --- !u!61 &5047010021059146156
 BoxCollider2D:
   m_ObjectHideFlags: 0

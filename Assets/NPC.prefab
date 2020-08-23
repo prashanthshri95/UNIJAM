@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 165938003069125768}
   - component: {fileID: 165938003069125879}
   - component: {fileID: 165938003069125877}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 165938004576245643}
   - component: {fileID: 165938004576245641}
   - component: {fileID: 3200728514261223267}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
