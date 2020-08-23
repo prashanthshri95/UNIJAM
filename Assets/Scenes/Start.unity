@@ -330,11 +330,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Help everyone in the neighbourhood communicate and stay connected during
-    lockdown by delivering mail to the moving houses, one after another.\nDeliver
-    as much mail as you can before the day is over. But watch out! Teddy Bears roam
-    the streets and have no concept of social distancing, so avoid them at all costs!
-    Hit them with pancakes to make them go away.\n\nARROW KEYS = MOVE\nLEFT ALT KEY
-    = THROW MAIL \nSPACE BAR = THROW PANCAKE"
+    lockdown by being everyone's favourite postie.\nDeliver as much mail as you can
+    before the day is over. But watch out! Teddy Bears roam the streets and have
+    no concept of social distancing, so avoid them at all costs! Hit them with pancakes
+    to make them go away.\n\nARROW KEYS = MOVE\nLEFT ALT KEY = THROW MAIL \nSPACE
+    BAR = THROW PANCAKE"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
