@@ -11,15 +11,19 @@ public class wanderer : MonoBehaviour
   private Transform transform;
   public float speed = 10;
   private Rigidbody2D rb;
-  private Animator anim;
+  //private Animator anim;
+  private Transform temp;
+  private float nextActionTime = 0.0f;
+  public float period = 0.5f;
 
 
     void Start()
     {
       transform = GetComponent<Transform>();
+      temp = transform;
       rb = GetComponent<Rigidbody2D>();
-      anim = GetComponentInChildren<Animator>();
-      anim.SetFloat("Speed",1);
+      //anim = GetComponentInChildren<Animator>();
+      //anim.SetFloat("Speed",1);
       ChangeDirection();
 
 
@@ -28,7 +32,12 @@ public class wanderer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      if (transform == temp && Time.time > nextActionTime) {
+        nextActionTime = Time.time + period;
+        ChangeDirection();
+        Debug.Log("the same");
 
+      }
       Move();
     }
 
@@ -61,8 +70,8 @@ public class wanderer : MonoBehaviour
           directionVector = new Vector3(1,(float)0.5,0);
           break;
       }
-      UpdateAnimation();
-
+      //UpdateAnimation();
+      temp.position = transform.position;
     }
 
     void OnCollisionEnter2D() {
@@ -77,9 +86,9 @@ public class wanderer : MonoBehaviour
       Debug.Log(i);
     }
 
-    void UpdateAnimation(){
+    //void UpdateAnimation(){
 
-      anim.SetFloat("Horizontal",(float)Math.Round(directionVector.x));
-      anim.SetFloat("Vertical",(float)Math.Round(directionVector.y));
-    }
+      //anim.SetFloat("Horizontal",(float)Math.Round(directionVector.x));
+      //anim.SetFloat("Vertical",(float)Math.Round(directionVector.y));
+    //}
 }
