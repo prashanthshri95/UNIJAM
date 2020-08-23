@@ -32,8 +32,10 @@ public class destroy : MonoBehaviour
           if ((col.gameObject.name).Equals("HouseLR") || (col.gameObject.name).Equals("HouseUD") )
         {
             Debug.Log("triggered" + col.gameObject.name + " : " + gameObject.name + " : ");
-            KeepScore.Score += 100;
-            Debug.Log("your score is" + KeepScore.Score);
+            // KeepScore.Score += 100;
+            PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + 100);
+
+            //Debug.Log("your score is" + KeepScore.Score);
             //Destroy(this.gameObject);
 
 

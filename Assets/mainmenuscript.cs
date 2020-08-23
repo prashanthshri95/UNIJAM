@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class mainmenuscript : MonoBehaviour
 {
   public void PlayGame() {
-    SceneManager.LoadScene("MainScene");
+        PlayerPrefs.SetInt("Score", 0);
+
+        SceneManager.LoadScene("MainScene");
   }
 
 }

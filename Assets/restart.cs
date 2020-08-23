@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class restart : MonoBehaviour
 {
   public void PlayGame2() {
-    SceneManager.LoadScene("MainScene");
+        PlayerPrefs.SetInt("Score", 0);
+        SceneManager.LoadScene("MainScene");
   }
 
 }
