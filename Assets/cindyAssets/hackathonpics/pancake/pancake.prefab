@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2364688618036538910}
   - component: {fileID: 2751534773705509732}
   - component: {fileID: 2356850867586637121}
+  - component: {fileID: 1511286711146791580}
   m_Layer: 0
   m_Name: pancake
   m_TagString: Untagged
@@ -140,3 +141,15 @@ PolygonCollider2D:
       - {x: 0.74, y: 0.04}
       - {x: 0.74, y: 0.28}
       - {x: 0.5, y: 0.45999998}
+--- !u!114 &1511286711146791580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5313807551464600724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91f65fb6c4946674082d3cec9ebddcf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -13,12 +13,14 @@ public class destroy : MonoBehaviour
     {
         Destroy(this.gameObject, 5);
         Physics2D.IgnoreLayerCollision(8, 9);
+        Physics2D.IgnoreLayerCollision(8, 10);
     }
 
     // Update is called once per frame
     void Update()
     {
       Physics2D.IgnoreLayerCollision(8, 9);
+      Physics2D.IgnoreLayerCollision(8, 10);
 
     }
 
@@ -26,7 +28,8 @@ public class destroy : MonoBehaviour
     {
 
       Physics2D.IgnoreLayerCollision(8, 9);
-          if ((col.gameObject.name).Equals("HouseLR") || (col.gameObject.name).Equals("HouseUD") );
+      Physics2D.IgnoreLayerCollision(8, 10);
+          if ((col.gameObject.name).Equals("HouseLR") || (col.gameObject.name).Equals("HouseUD") )
         {
             Debug.Log("triggered" + col.gameObject.name + " : " + gameObject.name + " : ");
             KeepScore.Score += 100;
