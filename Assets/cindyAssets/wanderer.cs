@@ -25,6 +25,7 @@ public class wanderer : MonoBehaviour
       //anim = GetComponentInChildren<Animator>();
       //anim.SetFloat("Speed",1);
       //ChangeDirection();
+      Physics2D.IgnoreLayerCollision(8, 9);
 
 
     }
@@ -36,6 +37,7 @@ public class wanderer : MonoBehaviour
         nextActionTime = Time.time + period;
         ChangeDirection();
         Debug.Log("the same");
+        Physics2D.IgnoreLayerCollision(8, 9);
 
       }
       Move();
