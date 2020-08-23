@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class TimerScript2 : MonoBehaviour
 {
-    int timelimit = 60;
+    int timelimit = 30;
     // Start is called before the first frame update
     void Start()
     {
