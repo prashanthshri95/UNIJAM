@@ -176,7 +176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6386309732113725526, guid: 9b51fe8f036a91d499410a281ad33d5d, type: 3}
       propertyPath: m_Name
-      value: NPC (5)
+      value: NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b51fe8f036a91d499410a281ad33d5d, type: 3}
@@ -233,7 +233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6386309732113725526, guid: 9b51fe8f036a91d499410a281ad33d5d, type: 3}
       propertyPath: m_Name
-      value: NPC (3)
+      value: NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b51fe8f036a91d499410a281ad33d5d, type: 3}
@@ -7931,7 +7931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6386309732113725526, guid: 9b51fe8f036a91d499410a281ad33d5d, type: 3}
       propertyPath: m_Name
-      value: NPC (4)
+      value: NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b51fe8f036a91d499410a281ad33d5d, type: 3}
@@ -7988,7 +7988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6386309732113725526, guid: 9b51fe8f036a91d499410a281ad33d5d, type: 3}
       propertyPath: m_Name
-      value: NPC (7)
+      value: NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b51fe8f036a91d499410a281ad33d5d, type: 3}
@@ -8127,7 +8127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6386309732113725526, guid: 9b51fe8f036a91d499410a281ad33d5d, type: 3}
       propertyPath: m_Name
-      value: NPC (8)
+      value: NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b51fe8f036a91d499410a281ad33d5d, type: 3}
@@ -8423,6 +8423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f187d3f97c3dd04b8237dfde4137f94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Score: 0
 --- !u!4 &752949580
 Transform:
   m_ObjectHideFlags: 0
@@ -15312,7 +15313,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1014316836}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10811e155abf61d4d856d6ce0e3b5a8a, type: 3}
   m_Name: 
@@ -15370,7 +15371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6386309732113725526, guid: 9b51fe8f036a91d499410a281ad33d5d, type: 3}
       propertyPath: m_Name
-      value: NPC (6)
+      value: NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b51fe8f036a91d499410a281ad33d5d, type: 3}
@@ -18173,7 +18174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6386309732113725526, guid: 9b51fe8f036a91d499410a281ad33d5d, type: 3}
       propertyPath: m_Name
-      value: NPC (2)
+      value: NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b51fe8f036a91d499410a281ad33d5d, type: 3}
@@ -18613,7 +18614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6386309732113725526, guid: 9b51fe8f036a91d499410a281ad33d5d, type: 3}
       propertyPath: m_Name
-      value: NPC (1)
+      value: NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b51fe8f036a91d499410a281ad33d5d, type: 3}
