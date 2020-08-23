@@ -39,7 +39,7 @@ public class TimerScript2 : MonoBehaviour
     }
     void OnGUI()
     {
-        GUI.Box(new Rect(150, 150, 150, 150),timelimit.ToString() );
+        GUI.Box(new Rect(81, 0, 150, 30), "Time Remaining: " + timelimit.ToString());
 
     }
   }
